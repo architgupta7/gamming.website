@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Pro Chase Gammer</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	var filterList = {
+		init: function () {
+			$('#portfoliolist').mixitup({
+				targetSelector: '.portfolio',
+				filterSelector: '.filter',
+				effects: ['fade'],
+				easing: 'snap',
+				onMixEnd: filterList.hoverEffect()
+			});			
+		},
+		hoverEffect: function () {
+			$('#portfoliolist .portfolio').hover(
+				function () {
+					$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+					$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+				},
+				function () {
+					$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+					$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+				}		
+			);				
+		}
+	};
+	filterList.init();	
+});	
+</script>
+</head>
+<body>
+<div class="header">
+	<div class="container">
+		<div class="logo">
+			<a href="index.html"><img src="./" alt=""></a>
+		</div>
+		<span class="menu"></span>
+		<div class="navigation">
+			<ul class="navig cl-effect-3" >
+				<li><a href="./instalogin.html">Login/Sign up</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="games.html">Games</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="features.html">Features</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<div class="search-bar">
+					<input type="text" placeholder="search" required=""  value=""/>
+					<input type="submit" value="" />
+			</div>
+			<div class="clearfix"></div>
+			<script>
+				$( "span.menu" ).click(function() {
+				  $( ".navigation" ).slideToggle( "slow", function() {
+				  });
+				});
+			</script>
+
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div class="banner"></div>
+<div class="banner-bot">
+	<div class="container">
+		<h2>Games!</h2>
+		<p>A game is a structured from of play,usually undertaken for entertainment or fun,and sometimes used as an educational tool.Many games are also considered to be work oe art. Games are sometimes played purely for enjoyment,sometimes for achievement or reward as well.</p>
+		<p>Ludwig Wittgenstein was probably the first academic philosopher to adress the definition of the word game.in his <i><b>Philosophical Investigation,</b></i>Wittgenstein argued that the elememts of games,such as <i><b>play</b></i>,rules,and competition, all fail to adequately define what games are. from this Wittgenstein conclued that people apply the term game to a range of disparate human activities thet bear to one another only what one might call family resemblances. As the following game definitions show this conclusion was not a final one and today many philosophers like Thomas Hurka think Wittgenstein was wrong and that Bernard Suits definition is a good answer to the problem. </p>
+		<nav class="cl-effect-3"><a href="#">More</a></nav>
+	</div>
+</div>
+<div class="gallery">
+	<div class="container">
+		<h3>Gallery</h3>
+		<div class="gallery-top">
+			
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="./img/5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  		</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="./img/thamb 3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="./img/pubg 3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>				
+					<div class="portfolio logos mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="./img/asphalt 3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="./img/18.webp" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div>
+							   </a>
+		                </div>
+					</div>			
+				</div>
+
+		</div>
+	</div>
+</div>
+<video width="430" height="500" controls autoplay>
+	<source src="./vid/Vid 1.mp4" type="video/mp4">
+  </video>
+  <video width="450" height="500" controls autoplay>
+	<source src="./vid/Vid 2.mp4" type="video/mp4">
+  </video>
+  <video width="460" height="500" controls autoplay>
+	<source src="./vid/Vid 3.mp4" type="video/mp4">
+  </video><br/>
+  <h4>     Watch More Videos -:<a href="https://instagram.com/pro_chase_gammer?igshid=YmMyMTA2M2Y="> <b> Click Here</b></a></h4><br/>
+<div class="video-serch">
+	<div class="container">
+		<div class="col-md-6 vid-col">
+			<p>SCASH BROTHER'S VS FRIENDS 😱 || 2 VS 2 CUSTOM ROOM || BEST MATCH EVER || WHO WIN?? </p>
+			<p>Free Fire Live Streamer From India Killing Player with LOUD Volume Spy Like James Bond 007 Level Up to 68. 
+                <br/><br/>
+				📷INSTAGRAM  - Pro Chase Gammer 
+				<br/><br/>
+				🎮Facebook  :- Pro Chase Gammer 
+				<br/><br/>
+				🆔FREE FIRE ID - [Pro Chase Gammer - 1205290805]
+				<br/><br/>				
+				GAME NAME - Garena Free Fire
+				<br/><br/>
+				📝Disclaimer :- This is a Gameplay/Entertainment Video Made For Entertainment Purpose Only For Gamers Audience ( Garena Free Fire ) . No Any Harmful Contents in this video. Its Just For Fun And Entertainment Only 
+				<br/><br/>
+				<b>Note :- </b>Copyright Disclaimer under Section 107 of the copyright act 1976, allowance is made for fair use for purposes such as criticism, comment, news reporting, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favour of fair use</p>
+			<div class="more">
+				<a href="https://youtube.com/@prochasegammer">See more videos</a>
+			</div>
+		</div> 
+		<div class="col-md-6 vid-coll">
+			<img src="./img/thamb 2.jpg" alt="">
+			<div class="play-but">
+				<a href="https://youtube.com/@prochasegammer" class="thickbox play-icon popup-with-zoom-anim"><img src="images/vid-play.png" alt="" /></a>
+			</div>
+					  <script type="text/javascript" src="js/modernizr.custom.53451.js"></script>  
+					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+			<div id="small-dialog5" class="mfp-hide">
+					<iframe src="//player.vimeo.com/video/38584262"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+				</div>
+				 <script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>
+		</div>
+		<div class="clearfix"></div>
+	</div>	
+</div>
+<div class="what-new">
+	<div class="container">
+		<h3>What's new in games</h3>
+		<div class="blog-news">
+			<div class="blog-news-grid">
+				<div class="news-grid-left">
+					<h4>21</h4>
+					<small>of March 2023</small>
+				</div>
+				<div class="news-grid-right">
+					<h4>FREE FIRE - CHARACTER SYSTEM REMAKE</h4>
+					<p> The Character page now contains a Preset Customization Section. You May Customize up to 5 preset combos here,including character appearance, character skills,pet skills and loadouts </p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="blog-news-grid b_n_g">
+				<div class="news-grid-left">
+					<h4>21</h4>
+					<small>of March 2023</small>
+				</div>
+				<div class="news-grid-right">
+					<h4>FREE FIRE- SYSTEM UPDATE </h4>
+					<p>"The weapon glory leaderboard has added Sub - divisions ! Be the first to shine in your area!" <br/> New Sub-divisions and titles in the weapon Glory Leaderboard</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="blog-news b_n">
+			<div class="blog-news-grid">
+				<div class="news-grid-left">
+					<h4>05</h4>
+					<small>of April 2023</small>
+				</div>
+				<div class="news-grid-right">
+					<h4>PUBG-PATCH NOTES UPDATE 23.1 </h4>
+					<p>
+						This update will also introduce new changes to Ranked. As announced in our 2023 Roadmap, we're committed to providing more exciting gameplay through various updates. we're adding items and vehicles available in Normal Matches. </p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="blog-news-grid b_n_g">
+				<div class="news-grid-left">
+					<h4>03</h4>
+					<small>of February 2023</small>
+				</div>
+				<div class="news-grid-right">
+					<h4>Asphalt 9 : CITY OF LIGHTS
+						NEW TRACK IN PARIS!</h4>
+					<p>Welcome to a new update! This update race in Paris on a brand-new track in the City of Lights Season. Then take a break and enjoy the cherry blossoms and start the spring with the Sakura Spring Season. </p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<footer class="site-footer">
+	<div class="container">
+	  <div class="row">
+		<div class="col-sm-12 col-md-6">
+		  <h6>About</h6>
+		  <p class="text-justify">If you’re not a gamer, it can be hard to get the appeal of video games. The challenges they present can be frustrating, and non-gamers often lose interest. But for gamers, video games offer a wide range of pleasures that make them deeply enjoyable. These videos explore some of the playful experiences that make games so much fun</p>
+		</div>
+
+		<div class="col-xs-6 col-md-3">
+		  <h6>Categories</h6>
+		  <ul class="footer-links">
+			<li><a href="#">Video</a></li>
+			<li><a href="#">Shorts</a></li>
+			<li><a href="#">Reels</a></li>
+			<li><a href="#">Post</a></li>
+			<li><a href="#">Thumbnail</a></li>
+		  </ul>
+		</div>
+
+		<div class="col-xs-6 col-md-3">
+		  <h6>Quick Links</h6>
+		  <ul class="footer-links">
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Sitemap</a></li>
+		  </ul>
+		</div>
+	  </div>
+	  <hr>
+	</div>
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-8 col-sm-6 col-xs-12">
+		  <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+	   <a href="https://instagram.com/pro_chase_gammer?igshid=YmMyMTA2M2Y=">@pro-chase-gammer</a>.
+		  </p>
+		</div>
+<div class="footer">
+	<div class="container">
+		<a href="https://www.facebook.com/prochasegammer?mibextid=ZbWKwL"  style="font-size:30px;color:blue" class="fa fa-facebook"></a>
+<a href="https://youtube.com/@prochasegammer" style="font-size:30px;color:red"  class="fa fa-youtube" ></a>
+<a href="https://instagram.com/pro_chase_gammer?igshid=YmMyMTA2M2Y=" style="font-size:30px;color:pink"  class="fa fa-instagram"></a>
+<br />
+        <p><b>Website Design by </b><a href=""> PRO CHASE GAMMER</a></p>
+	</div>
+	
+</div>
+</body>
+</html>
